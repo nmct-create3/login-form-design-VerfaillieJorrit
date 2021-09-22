@@ -450,7 +450,29 @@ a:focus {
     ---
     Card with box shadow
 */
-
+.c-card {
+  background-color: white;
+  border: 1px solid;
+  border-color: #0000000d;
+  border-radius: 3px;
+}
+.c-card__body {
+  padding: 0 48px 48px 48px;
+}
+.c-card__footer {
+  padding-top: 12px;
+  text-align: center;
+  border-top: 1px solid;
+  border-color: #e2e3e7;
+}
+.c-card__title {
+  text-align: center;
+  padding-bottom: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  padding-top: 24px;
+}
 /*
     Component: Forms
     ---
@@ -479,9 +501,13 @@ a:focus {
   font-size: 16px;
   line-height: 24px;
   padding: 11px 11px 11px 11px;
+  border-color: #3385ff;
+  outline: none;
 }
 
 .c-input:focus {
+  box-shadow: h-offset v-offset blur spread color;
+  box-shadow: 0 0 0 3px #3385ff4d;
 }
 
 /*
@@ -492,6 +518,13 @@ a:focus {
 
 .c-label {
   display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: #606274;
+}
+.c-label-radio {
+  margin-bottom: 0px;
 }
 
 /* If a input is focused within the form-field class change te color of the label */
@@ -506,15 +539,30 @@ a:focus {
 */
 
 .c-button {
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  border: 1px solid;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 3px;
+  border-color: #2e77e6;
+  background-color: #3385ff;
+  color: white;
 }
 
 .c-button:hover {
+  background-color: #4f95ff;
 }
 
 .c-button:focus {
+  outline: none;
+  box-shadow: h-offset v-offset blur spread color;
+  box-shadow: 0 0 0 3px #3385ff4d;
 }
 
 .c-button:active {
+  background-color: #2e77e6;
 }
 
 .c-button--block {
